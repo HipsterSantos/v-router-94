@@ -53,18 +53,6 @@
         <h2 class="headline font-weight-bold mb-3">
           Important Links
         </h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(link, i) in importantLinks"
-            :key="i"
-            :href="link.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ link.text }}
-          </a>
-        </v-row>
       </v-col>
 
       <v-col
@@ -74,18 +62,6 @@
         <h2 class="headline font-weight-bold mb-3">
           Ecosystem
         </h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(eco, i) in ecosystem"
-            :key="i"
-            :href="eco.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ eco.text }}
-          </a>
-        </v-row>
       </v-col>
     </v-row>
   </v-container>
@@ -94,7 +70,6 @@
 <script>
   export default {
     name: 'HelloWorld',
-
     data: () => ({
       ecosystem: [
         {
